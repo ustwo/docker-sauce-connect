@@ -27,3 +27,6 @@ Use it in the `FROM` instruction.
       -e SAUCE_ACCESS_KEY=00000000-0000-0000-0000-000000000000 \
       ustwo/sauce-connect
 
+## Maintainers
+
+* [Arnau Siches](mailto:arnau@ustwo.com)
