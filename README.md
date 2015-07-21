@@ -16,7 +16,7 @@ This image runs [Sauce Labs Connect](https://docs.saucelabs.com/reference/sauce-
 
 Use it in the `FROM` instruction.
 
-    FROM ustwo/sauce-connect
+    FROM ustwo/docker-sauce-connect
     # your instructions
 
 ## Single run
@@ -25,7 +25,7 @@ Use it in the `FROM` instruction.
       -p 0.0.0.0:8000:8000 \
       -e SAUCE_USERNAME=foobar \
       -e SAUCE_ACCESS_KEY=00000000-0000-0000-0000-000000000000 \
-      ustwo/sauce-connect
+      ustwo/docker-sauce-connect
 
 ## Maintainers
 
