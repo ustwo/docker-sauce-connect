@@ -13,4 +13,4 @@ WORKDIR /usr/local/sauce-connect/sc-$SAUCE_VERSION-linux
 
 EXPOSE 8032
 
-CMD ["./bin/sc", "-P", "8000", "-u", "$SAUCE_USERNAME", "-k", "$SAUCE_ACCESS_KEY"]
+CMD ./bin/sc -P 8000 -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY
