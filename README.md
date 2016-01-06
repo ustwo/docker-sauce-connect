@@ -12,15 +12,14 @@ It sets the `sc` CLI as the entrypoint so it can be used as a replacement via
 an shell alias:
 
 ```sh
-$ alias sc="docker run -name sc -d -p 8000:8000 ustwo/sauce-connect"
+$ alias sc="docker run --rm -it -p 8000:8000 ustwo/sauce-connect"
 $ sc -P 8000 -u $SAUCE_USERNAME -k SAUCE_ACCESS_KEY
 ```
 
 Or just
 
 ```sh
-$ docker run -d \
-             --name sc \
+$ docker run -rm -it \
              -p 0.0.0.0:8000:8000 \
              ustwo/docker-sauce-connect -P 8000 \
                                         -u $SAUCE_USERNAME \
