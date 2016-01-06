@@ -2,29 +2,30 @@
 
 This docker image runs [Sauce Labs Connect](https://docs.saucelabs.com/reference/sauce-connect/) 4.3 on Java 8.
 
-
 ## Versions
 
 * 4.3, latest
 
-
 ## Usage
 
-Use it in the `FROM` instruction.
-
-```
-FROM ustwo/docker-sauce-connect
-# your instructions
-```
-
-Or as a single run
+It sets the `sc` CLI as the entrypoint so it can be used as a replacement via
+an shell alias:
 
 ```sh
-docker run –name sc -d \
-  -p 0.0.0.0:8000:8000 \
-  -e SAUCE_USERNAME=foobar \
-  -e SAUCE_ACCESS_KEY=00000000-0000-0000-0000-000000000000 \
-  ustwo/docker-sauce-connect
+$ alias sc="docker run -name sc -d -p 8000:8000 ustwo/sauce-connect"
+$ sc -P 8000 -u $SAUCE_USERNAME -k SAUCE_ACCESS_KEY
+```
+
+Or just
+
+```sh
+$ docker run -d \
+             --name sc \
+             -p 0.0.0.0:8000:8000 \
+             ustwo/docker-sauce-connect -P 8000 \
+                                        -u $SAUCE_USERNAME \
+                                        -k $SAUCE_ACCESS_KEY \
+                                        --tunnel-identifier foo
 ```
 
 
