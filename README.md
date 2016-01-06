@@ -1,31 +1,32 @@
-# Sauce Labs Connect
+# Docker Sauce Labs Connect
 
-This image runs [Sauce Labs Connect](https://docs.saucelabs.com/reference/sauce-connect/)
-4.3 on Java 8
+This docker image runs [Sauce Labs Connect](https://docs.saucelabs.com/reference/sauce-connect/) 4.3 on Java 8.
 
-*WARNING* This image is in development.
 
-# Versions
+## Versions
 
 * 4.3, latest
 
 
-# Usage
-
-## Base image
+## Usage
 
 Use it in the `FROM` instruction.
 
-    FROM ustwo/docker-sauce-connect
-    # your instructions
+```
+FROM ustwo/docker-sauce-connect
+# your instructions
+```
 
-## Single run
+Or as a single run
 
-    docker run –name sc -d \
-      -p 0.0.0.0:8000:8000 \
-      -e SAUCE_USERNAME=foobar \
-      -e SAUCE_ACCESS_KEY=00000000-0000-0000-0000-000000000000 \
-      ustwo/docker-sauce-connect
+```sh
+docker run –name sc -d \
+  -p 0.0.0.0:8000:8000 \
+  -e SAUCE_USERNAME=foobar \
+  -e SAUCE_ACCESS_KEY=00000000-0000-0000-0000-000000000000 \
+  ustwo/docker-sauce-connect
+```
+
 
 ## Maintainers
 
