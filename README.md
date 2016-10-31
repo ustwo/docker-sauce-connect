@@ -13,7 +13,7 @@ an shell alias:
 
 ```sh
 $ alias sc="docker run --rm -it -p 8000:8000 ustwo/sauce-connect"
-$ sc -P 8000 -u $SAUCE_USERNAME -k SAUCE_ACCESS_KEY
+$ sc -P 8000 -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY
 ```
 
 Or just
