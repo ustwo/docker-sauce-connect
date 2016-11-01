@@ -4,7 +4,8 @@ This docker image runs [Sauce Labs Connect](https://docs.saucelabs.com/reference
 
 ## Versions
 
-* 4.3, latest
+* 4.4, latest
+* 4.3
 
 ## Usage
 
