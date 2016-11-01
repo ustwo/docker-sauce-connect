@@ -22,10 +22,10 @@ Or just
 ```sh
 $ docker run --rm -it \
              -p 0.0.0.0:8000:8000 \
-             ustwo/docker-sauce-connect -P 8000 \
-                                        -u $SAUCE_USERNAME \
-                                        -k $SAUCE_ACCESS_KEY \
-                                        --tunnel-identifier foo
+             ustwo/sauce-connect -P 8000 \
+                                 -u $SAUCE_USERNAME \
+                                 -k $SAUCE_ACCESS_KEY \
+                                 --tunnel-identifier foo
 ```
 
 
