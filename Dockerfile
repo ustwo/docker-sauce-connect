@@ -14,7 +14,7 @@ RUN wget https://saucelabs.com/downloads/sc-$SAUCE_VERSION-linux.tar.gz -O - | t
 
 WORKDIR /usr/local/sauce-connect/sc-$SAUCE_VERSION-linux
 
-ENTRYPOINT ["/usr/local/sauce-connect/sc-4.4.1-linux/bin/sc"]
+ENTRYPOINT ["/usr/local/sauce-connect/sc-$SAUCE_VERSION-linux/bin/sc"]
 
 EXPOSE 8032
 
