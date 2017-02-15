@@ -28,7 +28,16 @@ $ docker run --rm -it \
                                  --tunnel-identifier foo
 ```
 
+## Contact
+
+* open.source@ustwo.com
+
 
 ## Maintainers
 
-* [Arnau Siches](mailto:arnau@ustwo.com)
+* Arnau Siches (@arnau)
+
+
+## License
+
+There is no guarantee of active maintenance. Licensed under [MIT](./LICENSE).
