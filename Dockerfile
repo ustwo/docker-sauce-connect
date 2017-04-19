@@ -1,7 +1,7 @@
 FROM java:8-jre
 MAINTAINER Arnau Siches <arnau@ustwo.com>
 
-ENV SAUCE_VERSION 4.4.1
+ENV SAUCE_VERSION 4.4.6
 
 WORKDIR /usr/local/sauce-connect
 
@@ -14,8 +14,9 @@ RUN wget https://saucelabs.com/downloads/sc-$SAUCE_VERSION-linux.tar.gz -O - | t
 
 WORKDIR /usr/local/sauce-connect/sc-$SAUCE_VERSION-linux
 
-ENTRYPOINT ["/usr/local/sauce-connect/sc-4.4.1-linux/bin/sc"]
+ENTRYPOINT ["/usr/local/sauce-connect/sc-4.4.6-linux/bin/sc"]
 
+EXPOSE 4445
 EXPOSE 8032
 
 CMD ["--version"]
