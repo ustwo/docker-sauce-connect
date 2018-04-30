@@ -1,7 +1,12 @@
 # Docker Sauce Labs Connect
 
-This docker image runs [Sauce Labs Connect](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy) 4.4.6 on Java 8.
+# THIS REPO IS NOT MAINTAINED ANY MORE!
 
+**Please use the fork: [https://github.com/joscha/docker-sauce-connect](https://github.com/joscha/docker-sauce-connect) and [https://hub.docker.com/r/joscha/docker-sauce-connect/](https://hub.docker.com/r/joscha/docker-sauce-connect/)**
+
+___
+
+This docker image runs [Sauce Labs Connect](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy) 4.4.6 on Java 8.
 
 ## Versions
 
